@@ -1,12 +1,37 @@
+import TypingEffect from "@/components/TypingEffect";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        
-      </footer>
+    <div className="w-full">
+      <div className="w-full max-w-screen-2xl mx-auto">
+        <div className="grid grid-cols-2 min-h-96">
+          <div className="col-span-1 p-4">
+            <TypingEffect
+              texts={["Selamat Datang Di Website Portfolio Saya","Membuat aplikasi berkualitas, solusi tepat guna."," Jelajahi karya terbaik saya di sini."]}
+              speed={100}
+              delay={2000}
+              className={"text-6xl font-black w-full"}
+            />
+          </div>
+          <div className="col-span-1"></div>
+        </div>
+        <div className="grid grid-cols-2  ">
+          <div className="col-span-2 p-4 text-xl font-bold">
+            <div className="text-lg">
+              Overview Skill
+            </div>
+            <div className="grid grid-cols-2 font-normal" >
+              <div className="col-span-1">Technical Skills</div>
+              <div className="col-span-1">Analytical Skills</div>
+              <div className="col-span-1">Design Skills</div>
+              <div className="col-span-1">Management Skills</div>
+              <div className="col-span-1">Speciadivzed Skills</div>
+              <div className="col-span-1">Soft Skills</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer className="w-full text-center py-6">&copy; 2025 Fadli Hermawan, All Right Reserved!</footer>
     </div>
   );
 }
